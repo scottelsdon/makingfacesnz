@@ -182,9 +182,167 @@ echo [73] jaymie-06.jpg done
 curl -L -A "Mozilla/5.0" -o "images\jaymie-07.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/whatsapp-image-2025-10-29-at-12.06.46_f05affed-2.jpg"
 echo [74] jaymie-07.jpg done
 
+
+
+echo.
+echo --- Our Work gallery (37 images) ---
+
+curl -L -A "Mozilla/5.0" -o "images\work-01.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/323836944_739857514042060_4306410135961191823_n1.jpg"
+echo [75] work-01.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-02.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/311000950_644680353865469_8644758164364500543_n.jpg"
+echo [76] work-02.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-03.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/313870742_1468414423640347_1934263757353321372_n.jpg"
+echo [77] work-03.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-04.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/314444519_518454023475735_2841925665934629753_n.jpg"
+echo [78] work-04.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-05.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/315224579_647809026817543_6817663360755694193_n.jpg"
+echo [79] work-05.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-06.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/316220045_10160775627712664_6745721156813314366_n-1.jpg"
+echo [80] work-06.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-07.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/317119157_1788853094818272_2918121496319225515_n.jpg"
+echo [81] work-07.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-08.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/449043949_2198539137149639_48011912923743164_n.jpg"
+echo [82] work-08.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-09.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/312501785_2045828032281029_7215430557324011968_n.jpg"
+echo [83] work-09.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-10.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/314482390_476235924601547_6749142475964308771_n.jpg"
+echo [84] work-10.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-11.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/314922032_809569740099982_5593292848738664424_n.jpg"
+echo [85] work-11.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-12.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/432435967_969777044495774_6118749855614561368_n.jpg"
+echo [86] work-12.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-13.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/432598176_833566938580497_2070369150090258845_n.jpg"
+echo [87] work-13.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-14.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/311298028_534086424910217_4851580246477168705_n.jpg"
+echo [88] work-14.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-15.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/311469387_1190397951833077_6043399142103564150_n.jpg"
+echo [89] work-15.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-16.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/313459762_873155150504785_3293000549154029212_n.jpg"
+echo [90] work-16.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-17.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/315951233_862025425213684_166666623220844762_n.jpg"
+echo [91] work-17.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-18.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/333184489_239154498549673_2441909726954147084_n.jpg"
+echo [92] work-18.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-19.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/2d5de2ae-e312-4229-b151-fcd971b4d5e0.jpg"
+echo [93] work-19.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-20.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/3d86c193-6121-4540-acf3-2777ef8e9c55.jpeg"
+echo [94] work-20.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-21.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/a59cd8fd-d3ac-4b32-9f36-e57ff3e05696.jpg"
+echo [95] work-21.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-22.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/image0.jpeg"
+echo [96] work-22.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-23.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/img_20231209_110604.jpg"
+echo [97] work-23.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-24.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/106532334_615937185720377_3378633672448421773_o-2.jpg"
+echo [98] work-24.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-25.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/160690140_792755681369124_5910818663681276310_n.jpg"
+echo [99] work-25.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-26.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/385533483_1039497490433541_4016326089611025010_n-1.jpg"
+echo [100] work-26.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-27.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/118650127_3893128477387982_2102124133559064311_n.jpg"
+echo [101] work-27.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-28.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/317915858_680834476778888_6009522631022846970_n.jpg"
+echo [102] work-28.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-29.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/318650357_512339834265089_4434329127771290400_n.jpg"
+echo [103] work-29.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-30.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/img20240330150120.jpg"
+echo [104] work-30.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-31.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/106571274_615937245720371_7517537685155836341_o.jpg"
+echo [105] work-31.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-32.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/img20240330151535.jpg"
+echo [106] work-32.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-33.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/received_874249797195090.jpeg"
+echo [107] work-33.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-34.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/321566668_916816883006829_684948553023648345_n.jpg"
+echo [108] work-34.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-35.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/379946513_1352003502384967_5304627963344049774_n.jpg"
+echo [109] work-35.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-36.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/img_20200801_142445.jpg"
+echo [110] work-36.jpg done
+curl -L -A "Mozilla/5.0" -o "images\work-37.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/img_20221119_160851.jpg"
+echo [111] work-37.jpg done
+
+echo.
+echo --- Baby Bump gallery (13 images) ---
+
+curl -L -A "Mozilla/5.0" -o "images\bump-01.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/screenshot_2023-03-05-12-12-12-83_be80aec1db9a2b53c9d399db0c602181.jpg"
+echo [112] bump-01.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-02.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/2020-08-22-12-08-53-059.jpg"
+echo [113] bump-02.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-03.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/img_20200919_124351.jpg"
+echo [114] bump-03.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-04.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/342958889_198930039620979_7730259839685042536_n.jpg"
+echo [115] bump-04.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-05.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/343289450_633075818834447_1419992473204520796_n.jpg"
+echo [116] bump-05.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-06.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/328294577_3139620816336808_2544661808778954223_n.jpg"
+echo [117] bump-06.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-07.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/117256056_962232310867377_104359019213465547_n.jpg"
+echo [118] bump-07.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-08.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/fb_img_1617324108487.jpg"
+echo [119] bump-08.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-09.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/megan-bump.jpg"
+echo [120] bump-09.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-10.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/img20240815142304.jpg"
+echo [121] bump-10.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-11.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/121456822_669818690307112_3732727835146200023_n.jpg"
+echo [122] bump-11.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-12.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/272074869_2098748303620984_4325693502513554187_n.jpg"
+echo [123] bump-12.jpg done
+curl -L -A "Mozilla/5.0" -o "images\bump-13.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/371845361_815748260275960_5427580046348729578_n.jpg"
+echo [124] bump-13.jpg done
+
+echo.
+echo --- Store hair extension images ---
+
+curl -L -A "Mozilla/5.0" -o "images\store-mini-plain1.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/img_20240317_163645.jpg"
+echo [125] store-mini-plain1.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-mini-plain2.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/img_20240317_163706.jpg"
+echo [126] store-mini-plain2.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-mini-braid1.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/img_20240317_163522.jpg"
+echo [127] store-mini-braid1.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-mini-braid2.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/img_20240317_163536.jpg"
+echo [128] store-mini-braid2.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-mini-braid3.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/02/img_20240317_163548.jpg"
+echo [129] store-mini-braid3.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-plain1.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163706-1.jpg"
+echo [130] store-maxi-plain1.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-plain2.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163724.jpg"
+echo [131] store-maxi-plain2.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-braid1.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163742-1.jpg"
+echo [132] store-maxi-braid1.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-braid2.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163758-1.jpg"
+echo [133] store-maxi-braid2.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-braid3.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163813-1.jpg"
+echo [134] store-maxi-braid3.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-braid4.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163842-1.jpg"
+echo [135] store-maxi-braid4.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-braid5.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163901.jpg"
+echo [136] store-maxi-braid5.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-braid6.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163924.jpg"
+echo [137] store-maxi-braid6.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-maxi-braid7.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163942.jpg"
+echo [138] store-maxi-braid7.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-specials1.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_163952.jpg"
+echo [139] store-specials1.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-specials2.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_164034.jpg"
+echo [140] store-specials2.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-specials3.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/03/img_20240317_164104.jpg"
+echo [141] store-specials3.jpg done
+curl -L -A "Mozilla/5.0" -o "images\store-unicorn.jpg" "https://makingfacesnz.art/wp-content/uploads/2024/11/img20240907172928.jpg"
+echo [142] store-unicorn.jpg done
+
+echo.
+echo --- Events images ---
+
+curl -L -A "Mozilla/5.0" -o "images\events-banner.jpg" "https://makingfacesnz.art/wp-content/uploads/2026/03/whatsapp-image-2026-03-01-at-3.31.38-pm-1.jpeg"
+echo [143] events-banner.jpg done
+curl -L -A "Mozilla/5.0" -o "images\events-venue.jpg" "https://makingfacesnz.art/wp-content/uploads/2022/09/img_20220423_100225.jpg"
+echo [144] events-venue.jpg done
+
 echo.
 echo ================================================
-echo   ALL DONE! 74 images downloaded.
+echo   ALL DONE! 144 images total downloaded.
 echo   Check the "images" folder next to this file.
 echo ================================================
 echo.
