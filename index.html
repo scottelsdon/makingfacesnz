@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Making Faces NZ – Children's Entertainment Wellington</title>
-  <meta name="description" content="Wellington's premier children's party entertainment – face painting, balloon twisting, Disney princess characters, bubble shows & more. Serving Wellington, Tawa & Porirua." />
+  <meta name="description" content="Wellington's premier children's party entertainment – face painting, balloon twisting, magical character performers, bubble shows & more. Serving Wellington, Kapiti and the Hutt." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
@@ -58,7 +58,7 @@
       font-family: 'Baloo 2', cursive; font-size: 1.35rem; font-weight: 800;
       color: var(--pink);
     }
-    .nav-logo img { width: 44px; height: 44px; border-radius: 50%; object-fit: cover; }
+    .nav-logo img { height: 156px; width: auto; border-radius: 0; object-fit: contain; }
     .nav-links {
       display: flex; gap: 28px; list-style: none;
       font-weight: 600; font-size: 0.92rem;
@@ -106,16 +106,20 @@
     .confetti-bg {
       position: absolute; inset: 0; pointer-events: none; overflow: hidden;
     }
-    .confetti-dot {
-      position: absolute; border-radius: 50%;
-      animation: floatDot linear infinite;
-      opacity: 0.5;
+    .balloon {
+      position: absolute;
+      animation: riseBalloon linear infinite;
+      opacity: 0;
+      transform-origin: center bottom;
     }
-    @keyframes floatDot {
-      0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
-      10%  { opacity: 0.5; }
-      90%  { opacity: 0.4; }
-      100% { transform: translateY(-110vh) rotate(720deg); opacity: 0; }
+    @keyframes riseBalloon {
+      0%   { transform: translateY(0)      translateX(0px);   opacity: 0; }
+      8%   { opacity: 0.82; }
+      25%  { transform: translateY(-25vh)  translateX(12px);  }
+      50%  { transform: translateY(-50vh)  translateX(-10px); }
+      75%  { transform: translateY(-75vh)  translateX(10px);  }
+      92%  { opacity: 0.7; }
+      100% { transform: translateY(-112vh) translateX(-8px);  opacity: 0; }
     }
     .hero-inner {
       max-width: 1200px; width: 100%;
@@ -376,6 +380,45 @@
     .pricing-name { font-weight: 600; color: var(--text); }
     .pricing-cost { font-family: 'Baloo 2', cursive; font-weight: 700; color: var(--pink); font-size: 1.05rem; }
     .pricing-note { font-size: 0.8rem; color: #9a8ab0; margin-top: 4px; }
+    .travel-box {
+      background: #fff8ff; border-radius: var(--radius);
+      border: 2px solid rgba(56,201,245,0.2);
+      padding: 28px 32px; margin-top: 40px;
+    }
+    .travel-box h3 { font-size: 1.15rem; color: var(--dark); margin-bottom: 6px; }
+    .travel-box .travel-intro { font-size: 0.9rem; color: #6b5f88; margin-bottom: 22px; line-height: 1.6; }
+    .travel-zones { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 16px; }
+    .travel-zone {
+      background: white; border-radius: 12px;
+      border: 1.5px solid rgba(168,85,247,0.12);
+      padding: 16px 18px;
+    }
+    .travel-zone-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 10px;
+    }
+    .travel-zone-title { font-family: 'Baloo 2', cursive; font-weight: 700; font-size: 0.95rem; color: var(--dark); }
+    .travel-zone-fee {
+      font-family: 'Baloo 2', cursive; font-weight: 800; font-size: 1rem;
+      color: var(--pink); white-space: nowrap;
+    }
+    .travel-zone-fee.free { color: var(--mint); }
+    .travel-zone-fee.custom { color: var(--purple); }
+    .travel-zone ul { list-style: none; display: flex; flex-direction: column; gap: 5px; }
+    .travel-zone ul li {
+      font-size: 0.8rem; color: #7a6b9a; line-height: 1.5;
+      display: flex; gap: 7px; align-items: flex-start;
+    }
+    .travel-zone ul li::before { content: '•'; color: var(--blue); font-weight: 800; flex-shrink: 0; }
+    .travel-zone .zone-areas { font-size: 0.78rem; color: #9a8ab0; margin-top: 8px; line-height: 1.55; }
+    .travel-notes {
+      margin-top: 16px; display: flex; flex-wrap: wrap; gap: 10px;
+    }
+    .travel-note-pill {
+      background: rgba(56,201,245,0.1); border: 1.5px solid rgba(56,201,245,0.2);
+      border-radius: 50px; padding: 5px 14px;
+      font-size: 0.8rem; color: #2a7a9a; font-weight: 600;
+    }
     .tcs-box {
       background: #fff8ff; border-radius: var(--radius);
       border: 2px solid rgba(168,85,247,0.15);
@@ -710,8 +753,6 @@
 <!-- ── NAV ─────────────────────────────────────── -->
 <nav id="mainNav">
   <a class="nav-logo" href="#home">
-    <img src="images/logo.jpg" alt="Making Faces NZ Logo" />
-    Making Faces NZ
   </a>
   <ul class="nav-links">
     <li><a href="#services">Services</a></li>
@@ -749,26 +790,20 @@
 
   <div class="hero-inner max-w">
     <div class="hero-text fade-up">
-      <h1>Making Every Party<br /><span>Magical & Memorable!</span></h1>
-      <p class="hero-sub">Professional face painting, balloon twisting, Disney princess characters, bubble shows & so much more. Serving Wellington, Tawa & Porirua.</p>
+      <h1>Making Every Event<br /><span>Magical & Memorable!</span></h1>
+      <p class="hero-sub">Professional face painting, balloon twisting, magical character performers, bubble shows & so much more. Serving Wellington, Kapiti and the Hutt.</p>
       <div class="hero-btns">
         <a href="https://form.jotform.com/212906201614041" target="_blank" class="btn-primary">🎉 Book Your Party</a>
         <a href="#services" class="btn-secondary">See All Services</a>
-      </div>
-      <div class="hero-prices">
-        <div class="hero-price-pill"><span class="dot" style="background:#ff4d8d"></span>Face Painting from $115</div>
-        <div class="hero-price-pill"><span class="dot" style="background:#ffc933"></span>Balloons from $138</div>
-        <div class="hero-price-pill"><span class="dot" style="background:#38c9f5"></span>Characters from $287.50</div>
-        <div class="hero-price-pill"><span class="dot" style="background:#4de8b0"></span>Bubble Shows from $149.50</div>
       </div>
     </div>
 
     <div class="hero-images fade-up" style="transition-delay:.15s">
       <div class="hero-img-main">
-        <img src="images/hero-main.jpg" alt="Face painting at a party" />
+        <img src="images/char-g02.jpg" alt="Face painting at a party" />
       </div>
       <div class="hero-img-float">
-        <img src="images/hero-float.jpg" alt="Character princess visit" />
+        <img src="images/logo.gif" alt="Making Faces NZ Logo" style="object-fit:contain; background:transparent;" />
       </div>
       <div class="hero-star" style="width:60px;height:60px;top:-18px;left:10px;">🌟</div>
       <div class="hero-star" style="width:48px;height:48px;bottom:30px;right:-10px;animation-delay:.8s;">🎈</div>
@@ -787,14 +822,13 @@
     <div class="services-grid">
 
       <div class="service-card fade-up">
-        <img class="service-img" src="images/face-painting.jpg" alt="Face Painting" />
+        <img class="service-img" src="images/baby-bump.jpg" alt="Baby Bump Painting" />
         <div class="service-body">
-          <div class="service-emoji">🎨</div>
-          <h3>Face Painting</h3>
-          <p>Transform little faces into living masterpieces with vibrant, safe, professional-grade paints and glitter. Birthday bashes, fairs, corporate events — we do it all!</p>
-          <span class="service-price">From $115 inc. GST</span>
+          <div class="service-emoji">🤰</div>
+          <h3>Baby Bump Painting</h3>
+          <p>Celebrate your beautiful pregnancy with whimsical, personalised baby bump art. Adorable, hilarious or classic — a delightful keepsake for this precious time.</p>
+          <span class="service-price">From $46 inc. GST</span>
         </div>
-        <span class="service-tag">Most Popular</span>
       </div>
 
       <div class="service-card fade-up" style="transition-delay:.08s">
@@ -808,16 +842,6 @@
       </div>
 
       <div class="service-card fade-up" style="transition-delay:.12s">
-        <img class="service-img" src="images/bubbles.jpg" alt="Bubble Show" />
-        <div class="service-body">
-          <div class="service-emoji">🫧</div>
-          <h3>Giant Bubble Shows</h3>
-          <p>Mesmerizing giant bubbles that float, dance and captivate young hearts! Bubbles as big as your dreams — complete with a hands-on workshop. 1 Hour show.</p>
-          <span class="service-price">From $149.50 inc. GST</span>
-        </div>
-      </div>
-
-      <div class="service-card fade-up" style="transition-delay:.16s">
         <img class="service-img" src="images/character-main.jpg" alt="Princess Characters" />
         <div class="service-body">
           <div class="service-emoji">👑</div>
@@ -828,17 +852,38 @@
         <span class="service-tag">✨ Magic</span>
       </div>
 
-      <div class="service-card fade-up" style="transition-delay:.2s">
-        <img class="service-img" src="images/baby-bump.jpg" alt="Baby Bump Painting" />
+      <div class="service-card fade-up" style="transition-delay:.16s">
+        <img class="service-img" src="images/craft.jpg" alt="Craft Workshops" />
         <div class="service-body">
-          <div class="service-emoji">🤰</div>
-          <h3>Baby Bump Painting</h3>
-          <p>Celebrate your beautiful pregnancy with whimsical, personalised baby bump art. Adorable, hilarious or classic — a delightful keepsake for this precious time.</p>
-          <span class="service-price">From $46 inc. GST</span>
+          <div class="service-emoji">🎭</div>
+          <h3>Craft Workshops</h3>
+          <p>Juggling balls, playdough, sock puppets, magic wands, rock painting, pop-up cards, paper plate animals & more. A world where imagination meets craftsmanship!</p>
+          <span class="service-price">From $230 inc. GST</span>
         </div>
       </div>
 
+      <div class="service-card fade-up" style="transition-delay:.2s">
+        <img class="service-img" src="images/face-painting.jpg" alt="Face Painting" />
+        <div class="service-body">
+          <div class="service-emoji">🎨</div>
+          <h3>Face Painting</h3>
+          <p>Transform little faces into living masterpieces with vibrant, safe, professional-grade paints and glitter. Birthday bashes, fairs, corporate events — we do it all!</p>
+          <span class="service-price">From $115 inc. GST</span>
+        </div>
+        <span class="service-tag">Most Popular</span>
+      </div>
+
       <div class="service-card fade-up" style="transition-delay:.24s">
+        <img class="service-img" src="images/bubbles.jpg" alt="Bubble Show" />
+        <div class="service-body">
+          <div class="service-emoji">🫧</div>
+          <h3>Giant Bubble Shows</h3>
+          <p>Mesmerizing giant bubbles that float, dance and captivate young hearts! Bubbles as big as your dreams — complete with a hands-on workshop. 1 Hour show.</p>
+          <span class="service-price">From $149.50 inc. GST</span>
+        </div>
+      </div>
+
+      <div class="service-card fade-up" style="transition-delay:.28s">
         <img class="service-img" src="images/glitter.jpg" alt="Glitter Tattoos" />
         <div class="service-body">
           <div class="service-emoji">💫</div>
@@ -848,23 +893,13 @@
         </div>
       </div>
 
-      <div class="service-card fade-up" style="transition-delay:.28s">
+      <div class="service-card fade-up" style="transition-delay:.32s">
         <img class="service-img" src="images/hair-braids.jpg" alt="Hair Braid Extensions" />
         <div class="service-body">
           <div class="service-emoji">💇</div>
           <h3>Hair Braid Extensions</h3>
           <p>Mini and maxi braids woven with charm! Tie-in extensions for all ages. Perfect party favour activity. Basic braids from $10, full braids from $15 per piece.</p>
           <span class="service-price">From $11.50 inc. GST</span>
-        </div>
-      </div>
-
-      <div class="service-card fade-up" style="transition-delay:.32s">
-        <img class="service-img" src="images/craft.jpg" alt="Craft Workshops" />
-        <div class="service-body">
-          <div class="service-emoji">🎭</div>
-          <h3>Craft Workshops</h3>
-          <p>Juggling balls, playdough, sock puppets, magic wands, rock painting, pop-up cards, paper plate animals & more. A world where imagination meets craftsmanship!</p>
-          <span class="service-price">From $230 inc. GST</span>
         </div>
       </div>
 
@@ -1207,7 +1242,74 @@
 
     </div>
 
-    <div class="tcs-box fade-up" style="transition-delay:.16s">
+    <div class="travel-box fade-up" style="transition-delay:.16s">
+      <h3>🚗 Travel Charges</h3>
+      <p class="travel-intro">Travel fees ensure we can reach your event on time with all equipment and supplies. Fees are based on distance from Tawa, Wellington.</p>
+      <div class="travel-zones">
+
+        <div class="travel-zone">
+          <div class="travel-zone-header">
+            <div class="travel-zone-title">Standard Zone (0–15 km)</div>
+            <div class="travel-zone-fee free">Free ✓</div>
+          </div>
+          <ul>
+            <li>Included in all packages</li>
+            <li>No additional charges</li>
+          </ul>
+        </div>
+
+        <div class="travel-zone">
+          <div class="travel-zone-header">
+            <div class="travel-zone-title">Extended Zone (16–30 km)</div>
+            <div class="travel-zone-fee">$20 flat</div>
+          </div>
+          <ul><li>Maupuia, Karaka Bays, Miramar, Scorching Bay, Worser Bay, Seatoun, Strathmore Park, Moa Point, Breaker Bay, Lyall Bay, Houghton Bay, Southgate, Island Bay, Owhiro Bay, Melrose, Rongotai, Kilbirnie, Newtown, Berhampore, Kingston, Mornington, Vogel Town, Haitaitai, Brooklyn, Evans Bay, Mt Vic, Roseneath, Oriental Bay, Te Aro, Aro Valley, Highbury, The Glen, Thorndon, Kelburn, Northland, Karori, Makara, Wilton, Wadestown, Kaiwharawhara.</li></ul>
+          <p class="zone-areas"><strong>Hutt City:</strong> Horokiwi, Korokoro, Petone, Alicetown, Maungaraki, Ava, Melling, Normandale, Harbour View, Tirohanga, Boulcott, CBD, Woburn, Moera, Waiwhetu, Gracefield, Seaview, Wainuiomata, Glendale, The Bays, Eastbourne, Days Bay, Muritai, Waterloo, Fairfield, Naenae, Epuni, Belmont, Avalon, Kelson, Taita, Manor Park.</p>
+        </div>
+
+        <div class="travel-zone">
+          <div class="travel-zone-header">
+            <div class="travel-zone-title">Long Distance (31–45 km)</div>
+            <div class="travel-zone-fee">$35 flat</div>
+          </div>
+          <ul><li>Pukerua Bay, Paekakariki, Raumati South, Raumati, Paraparaumu, Stokes Valley, Haywards, Pinehaven, Silverstream, Heretunga.</li></ul>
+        </div>
+
+        <div class="travel-zone">
+          <div class="travel-zone-header">
+            <div class="travel-zone-title">Long Distance (46–55 km)</div>
+            <div class="travel-zone-fee">$40 flat</div>
+          </div>
+          <ul><li>Blue Mountain, Whitemans Valley, Mangaroa, Te Marua, Akatarawa, Birchville, Moonshine, Brown Owl, Timberlea, Maoribank, Totara Park, Clouston Park, Kingsley Heights, Wallaceville, Ebdentown, Elderslea, Trentham, Riverstone.</li></ul>
+        </div>
+
+        <div class="travel-zone">
+          <div class="travel-zone-header">
+            <div class="travel-zone-title">Long Distance (56–65 km)</div>
+            <div class="travel-zone-fee">$50 flat</div>
+          </div>
+          <ul><li>Otaihanga, Waikanae, Waikanae Beach, Peka Peka, Te Horo, Otaki.</li></ul>
+        </div>
+
+        <div class="travel-zone">
+          <div class="travel-zone-header">
+            <div class="travel-zone-title">Beyond 65 km</div>
+            <div class="travel-zone-fee custom">Custom quote</div>
+          </div>
+          <ul>
+            <li>Based on distance and travel time</li>
+            <li>Ideal for events outside Wellington or regional bookings</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="travel-notes">
+        <span class="travel-note-pill">✅ Travel fees included in your final quote</span>
+        <span class="travel-note-pill">🅿️ Parking costs may be added if required</span>
+      </div>
+    </div>
+
+    <div class="tcs-box fade-up" style="transition-delay:.2s">
       <h3>📋 Terms & Conditions</h3>
       <ul class="tcs-list">
         <li>Please check your invoice to ensure everything is correct and notify us immediately if anything needs adjusting.</li>
@@ -1357,9 +1459,6 @@
     </div>
     <div class="events-grid">
       <div class="events-list fade-up">
-        <div class="event-month">April 2026</div>
-        <div class="event-item"><strong>Sat 25th &amp; Sun 26th</strong> — Free Face Painting at The Southern Cross, 12–2pm</div>
-
         <div class="event-month">May 2026</div>
         <div class="event-item"><strong>Sun 2nd May</strong> — Geekfest Foxtail Events</div>
         <div class="event-item"><strong>Sat 3rd &amp; Sun 4th</strong> — Free Face Painting at The Southern Cross, 12–2pm</div>
@@ -1665,24 +1764,72 @@
 
 <!-- ── SCRIPTS ─────────────────────────────────────── -->
 <script>
-  /* ── Confetti dots ── */
+  /* ── Rising balloons ── */
   (function() {
     const container = document.getElementById('confettiBg');
-    const colors = ['#ff4d8d','#ffc933','#38c9f5','#4de8b0','#a855f7','#ff6b6b','#fb923c'];
-    for (let i = 0; i < 55; i++) {
-      const dot = document.createElement('div');
-      dot.className = 'confetti-dot';
-      const size = Math.random() * 14 + 5;
-      dot.style.cssText = `
-        width:${size}px; height:${size}px;
-        left:${Math.random()*100}%;
-        bottom:${-20}px;
-        background:${colors[Math.floor(Math.random()*colors.length)]};
-        animation-duration:${Math.random()*18+10}s;
-        animation-delay:${Math.random()*10}s;
-        border-radius:${Math.random()>0.5?'50%':'4px'};
-      `;
-      container.appendChild(dot);
+    const colors = ['#ff4d8d','#ffc933','#38c9f5','#4de8b0','#a855f7','#ff6b6b','#fb923c','#f97316'];
+
+    function makeBalloon(color, size) {
+      // balloon body (rounded teardrop via ellipse + small triangle tip)
+      const w = size, h = size * 1.25;
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('width', w);
+      svg.setAttribute('height', h + 10);
+      svg.setAttribute('viewBox', `0 0 ${w} ${h + 10}`);
+      svg.style.overflow = 'visible';
+
+      // highlight colour (lighter tint)
+      const lighter = color + 'cc';
+
+      // balloon body
+      const body = document.createElementNS('http://www.w3.org/2000/svg', 'ellipse');
+      body.setAttribute('cx', w / 2);
+      body.setAttribute('cy', h * 0.46);
+      body.setAttribute('rx', w / 2);
+      body.setAttribute('ry', h * 0.5);
+      body.setAttribute('fill', color);
+      svg.appendChild(body);
+
+      // shine spot
+      const shine = document.createElementNS('http://www.w3.org/2000/svg', 'ellipse');
+      shine.setAttribute('cx', w * 0.35);
+      shine.setAttribute('cy', h * 0.25);
+      shine.setAttribute('rx', w * 0.13);
+      shine.setAttribute('ry', h * 0.1);
+      shine.setAttribute('fill', 'rgba(255,255,255,0.45)');
+      svg.appendChild(shine);
+
+      // knot triangle at bottom of balloon
+      const knot = document.createElementNS('http://www.w3.org/2000/svg', 'polygon');
+      const kx = w / 2, ky = h * 0.96 + 1;
+      knot.setAttribute('points', `${kx-4},${ky} ${kx+4},${ky} ${kx},${ky+6}`);
+      knot.setAttribute('fill', color);
+      svg.appendChild(knot);
+
+      // string (wavy path)
+      const str = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+      const sy = ky + 6;
+      str.setAttribute('d', `M${kx},${sy} Q${kx+6},${sy+5} ${kx},${sy+10}`);
+      str.setAttribute('stroke', '#9a8ab0');
+      str.setAttribute('stroke-width', '1.2');
+      str.setAttribute('fill', 'none');
+      svg.appendChild(str);
+
+      return svg;
+    }
+
+    for (let i = 0; i < 40; i++) {
+      const color  = colors[Math.floor(Math.random() * colors.length)];
+      const size   = Math.random() * 18 + 14;          // 14–32 px wide
+      const svg    = makeBalloon(color, size);
+
+      svg.classList.add('balloon');
+      svg.style.left             = Math.random() * 100 + '%';
+      svg.style.bottom           = '-60px';
+      svg.style.animationDuration = (Math.random() * 14 + 10) + 's';
+      svg.style.animationDelay   = (Math.random() * 12) + 's';
+
+      container.appendChild(svg);
     }
   })();
 
